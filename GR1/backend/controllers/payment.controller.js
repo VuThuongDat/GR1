@@ -4,13 +4,9 @@ export const createCheckoutSession = async (req, res) => {
 	try {
 		const { products } = req.body;
 
-		if (!Array.isArray(products) || products.length === 0) {
-			return res.status(400).json({ error: "Invalid or empty products array" });
-		}
-
 		let totalAmount = 0;
 		products.forEach((product) => {
-			totalAmount += product.price * (product.quantity || 1);
+			totalAmount += product.price * product.quantity;
 		});
 
 		const order = new Order({

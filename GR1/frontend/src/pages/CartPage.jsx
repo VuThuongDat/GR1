@@ -46,7 +46,7 @@ const EmptyCartUI = () => (
 		<h3 className='text-2xl font-semibold'>Giỏ hàng trống</h3>
 		<Link
 			to='/'
-			className='mt-4 rounded-md bg-emerald-500 px-6 py-2 text-white hover:bg-emerald-600 transition'
+			className='mt-4 rounded-md bg-sky-500 px-6 py-2 text-white hover:bg-sky-600 transition'
 		>
 			Mua ngay!!!
 		</Link>

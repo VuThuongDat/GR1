@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <style>
+    body { font-family: sans-serif; }
+    input, button { margin: 5px; padding: 8px; }
+    li { cursor: pointer; }
+    .done { text-decoration: line-through; color: gray; }
+  </style>
+</head>
+<body>
+  <h2>Todo List</h2>
+  <input id="new-task" placeholder="Nhập công việc..." />
+  <button onclick="addTask()">Thêm</button>
+  <ul id="todo-list"></ul>
+
+  <script>
+    const input = document.getElementById("new-task");
+    const list = document.getElementById("todo-list");
+
+    function addTask() {
+      const task = input.value.trim();
+      if (task === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = task;
+      li.addEventListener("click", () => {
+        li.classList.toggle("done");
+      });
+      list.appendChild(li);
+      input.value = "";
+    }
+  </script>
+</body>
+</html>

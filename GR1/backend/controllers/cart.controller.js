@@ -22,10 +22,14 @@ export const addToCart = async (req, res) => {
 		const user = req.user;
 
 		const existingItem = user.cartItems.find((item) => item.id === productId);
+
 		if (existingItem) {
 			existingItem.quantity += 1;
 		} else {
-			user.cartItems.push(productId);
+			user.cartItems.push({
+				id: productId,
+				quantity: 1,
+			});
 		}
 
 		await user.save();

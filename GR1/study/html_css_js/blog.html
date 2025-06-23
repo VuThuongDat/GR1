@@ -1,0 +1,55 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Blog</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; }
+    article { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    h2 { margin: 0; }
+    .date { color: gray; font-size: 0.9em; }
+  </style>
+  <style>
+  .card {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+
+  .container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+  <h1>Blog của tôi</h1>
+
+  <article>
+    <h2>Bài viết 1</h2>
+    <p class="date">23/06/2025</p>
+    <p>Nội dung bài viết...</p>
+  </article>
+
+  <article>
+    <h2>Bài viết 2</h2>
+    <p class="date">22/06/2025</p>
+    <p>Bài viết khác nữa...</p>
+  </article>
+
+
+  <h2>Test</h2>
+  <div class="container">
+    <div class="card">Sách 1</div>
+    <div class="card">Sách 2</div>
+  </div>
+</body>
+</html>

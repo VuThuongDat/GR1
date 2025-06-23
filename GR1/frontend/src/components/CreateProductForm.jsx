@@ -45,7 +45,7 @@ const CreateProductForm = () => {
 
 	return (
 		<div className='bg-gray-800 shadow-md rounded-lg p-6 max-w-xl mx-auto mb-8'>
-			<h2 className='text-2xl font-semibold mb-4 text-emerald-300'>Thêm sản phẩm mới</h2>
+			<h2 className='text-2xl font-semibold mb-4 text-sky-300'>Thêm sản phẩm mới</h2>
 			<form onSubmit={handleSubmit} className='space-y-4'>
 
 				{/* Product Name */}
@@ -127,7 +127,7 @@ const CreateProductForm = () => {
 				{/* Submit Button */}
 				<button
 					type='submit'
-					className='w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-md flex items-center justify-center'
+					className='w-full bg-sky-600 hover:bg-sky-500 text-white py-2 px-4 rounded-md flex items-center justify-center'
 					disabled={loading}
 				>
 					{loading ? (

@@ -1,0 +1,14 @@
+<ul id="todo-list">
+  <li data-id="1">Việc 1</li>
+  <li data-id="2">Việc 2</li>
+</ul>
+
+<script>
+  const list = document.getElementById("todo-list");
+
+  list.addEventListener("click", (e) => {
+    if (e.target.tagName === "LI") {
+      alert(`Bạn bấm vào việc có ID: ${e.target.dataset.id}`);
+    }
+  });
+</script>

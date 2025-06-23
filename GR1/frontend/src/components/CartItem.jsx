@@ -37,7 +37,7 @@ const CartItem = ({ item }) => {
 						</button>
 					</div>
 
-					<div className='ml-6 md:w-32 text-base font-bold text-emerald-400'>
+					<div className='ml-6 md:w-32 text-base font-bold text-sky-400'>
 						{item.price}VND
 					</div>
 				</div>

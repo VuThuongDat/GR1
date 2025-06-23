@@ -1,0 +1,17 @@
+<button id="btn">Bật/Tắt</button>
+<p id="text" class="hidden">Xin chào!</p>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("btn");
+  const text = document.getElementById("text");
+
+  btn.addEventListener("click", () => {
+    text.classList.toggle("hidden");
+  });
+</script>

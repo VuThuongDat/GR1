@@ -45,6 +45,6 @@ const AnalyticsCard = ({ title, value, icon: Icon }) => (
 			<p className='text-gray-400 text-sm font-medium'>{title}</p>
 			<h3 className='text-white text-2xl font-semibold'>{value.toLocaleString()}</h3>
 		</div>
-		<Icon className='h-10 w-10 text-emerald-400' />
+		<Icon className='h-10 w-10 text-sky-400' />
 	</div>
 );

@@ -32,10 +32,10 @@ const ProductCard = ({ product }) => {
 
 			<div className="p-4">
 				<h5 className="text-lg font-semibold text-white">{product.name}</h5>
-				<p className="mt-2 text-2xl font-bold text-emerald-400">{product.price}VND</p>
+				<p className="mt-2 text-2xl font-bold text-sky-400">{product.price}VND</p>
 
 				<button
-					className="mt-4 flex items-center justify-center bg-emerald-600 text-white px-4 py-2 rounded"
+					className="mt-4 flex items-center justify-center bg-sky-600 text-white px-4 py-2 rounded"
 					onClick={handleAddToCart}
 				>
 					<ShoppingCart size={20} className="mr-2" />
